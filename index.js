@@ -85,7 +85,7 @@ inquirer
     console.log(response.name);
     fs.writeFile(
       "./readme/readme.md",
-      `## ${response.name}\n\n${response.description}\n\n## User Story\n\n${response.user}\n\n## Motivation\n\n${response.why}\n\n## Uniqueness\n\n${response.unique}\n\n## Preview Photo\n\nClick here: ![img](./${response.photo}) to see the screenshot.\n\n## Usage\n\n${response.usage}\n\n## Git Hub URL\n\nhttps://github.com/${response.url}\n\n## Author\n\n${response.author}\n\n## License\n\nThis project is protected by the ${response.copyright} license. Copyright J Cubed LLC\n\n## Badge\n\n![img](https://img.shields.io/badge/${response.label}-${response.message}-${response.color})`,
+      `## ${response.name}\n\n${response.description}\n\n## User Story\n\n${response.user}\n\n## Motivation\n\n${response.why}\n\n## Uniqueness\n\n${response.unique}\n\n## Preview Photo\n\n![img](./${response.photo})\n\n## Usage\n\n${response.usage}\n\n## Git Hub URL\n\nhttps://github.com/${response.url}\n\n## Author\n\n${response.author}\n\n## License\n\nThis project is protected by the ${response.copyright} license. Copyright J Cubed LLC\n\n## Badge\n\n![img](https://img.shields.io/badge/${response.label}-${response.message}-${response.color})`,
       "utf8",
       (err) => {
         if (err) throw err;

@@ -16,7 +16,7 @@ It gives the option for user to create their own badge.
 
 ## Preview Photo
 
-Click here: ![img](./photo.PNG) to see the screenshot.
+![img](./photo.PNG)
 
 ## Usage
 
